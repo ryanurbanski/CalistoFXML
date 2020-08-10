@@ -9,7 +9,8 @@ package Model;
 import java.util.ArrayList;
 
 /**
- *
+ * This class contains data for all users and is the parent to the 
+ * Employee and Customer classes
  * @author ryan
  */
 public class User {
