@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardViewController">
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardViewController">
    <children>
       <BorderPane prefHeight="580.0" prefWidth="320.0">
          <top>
@@ -23,7 +23,10 @@
             <HBox prefHeight="45.0" prefWidth="320.0" style="-fx-background-color: #5d6578;" BorderPane.alignment="CENTER">
                <children>
                   <Label alignment="CENTER" prefHeight="45.0" prefWidth="162.0" text="Home" textFill="#f8f8f8" />
-                  <Button id="profileButton" fx:id="profileButton" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="158.0" text="Profile" />
+                  <Label alignment="CENTER" prefHeight="48.0" prefWidth="159.0" textFill="#f8f8f8">
+                     <graphic>
+                        <Button id="profileButton" mnemonicParsing="false" text="Profile" />
+                     </graphic></Label>
                </children>
             </HBox>
          </bottom>

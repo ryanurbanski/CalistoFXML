@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="580" prefWidth="320" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProfileViewController">
+   <children>
+      <Label alignment="CENTER" prefHeight="46.0" prefWidth="325.0" style="-fx-background-color: #CDCDCD;" text="Calisto mFinance" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="46.0" prefHeight="53.0" prefWidth="325.0" text="Account Settings" />
+      <TextField floatText="Name" layoutX="42.0" layoutY="99.0" prefHeight="38.0" prefWidth="241.0" text="John Doe" />
+      <TextField floatText="Email" layoutX="42.0" layoutY="164.0" prefHeight="38.0" prefWidth="241.0" text="email@email.com" />
+      <TextField floatText="Phone Number" layoutX="42.0" layoutY="236.0" prefHeight="38.0" prefWidth="241.0" text="555-555-555" />
+      <Button layoutX="104.0" layoutY="334.0" mnemonicParsing="false" text="Save Information" />
+      <Button layoutX="88.0" layoutY="399.0" mnemonicParsing="false" text="Go Back to Dashboard" />
+   </children>
+</AnchorPane>
