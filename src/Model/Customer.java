@@ -1,17 +1,18 @@
 /*
- * Penn State University
- * IST 412
- * Ryan Urbanski
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
-
 package Model;
+
+import java.util.ArrayList;
 
 /**
  *
- * @author ryan
+ * @author bradleytrevenen
  */
-public class Customer extends UserFactory {
-    
+public class Customer{
+
     int id;
     int idCount = 0;
     String firstName;
@@ -19,15 +20,19 @@ public class Customer extends UserFactory {
     String email;
     String phoneNumber;
     String password;
-    
-    public Customer(String firstName, String lastName, 
-            String email, String phoneNumber, String password) {
+    Double balance;
+    ArrayList<LoanApplication> loanApplications;
+
+    public Customer(String firstName, String lastName,
+                    String email, String phoneNumber, String password, Double balance, ArrayList<LoanApplication> loanApplications) {
         this.id = generateID();
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.password = password;
+        this.balance = balance;
+        this.loanApplications = loanApplications;
     }
 
     private int generateID() {
@@ -35,7 +40,7 @@ public class Customer extends UserFactory {
         idCount +=1;
         return idTemp;
     }
-    
+
     // getters and setters
 
     public int getId() {
@@ -93,6 +98,5 @@ public class Customer extends UserFactory {
     public void setPassword(String password) {
         this.password = password;
     }
-    
-    
+
 }

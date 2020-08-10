@@ -17,11 +17,19 @@ public class CustomerData {
     
     public CustomerData() {
         customers = new ArrayList<Customer>();
+
+        ArrayList<LoanApplication> loanApplications = new ArrayList<LoanApplication>();
+        Customer temp = new Customer("First", "Last",
+                "email@email.com", "555-555-5555", "password", 0.00, loanApplications);
+
+        customers.add(temp);
     }
     
     public Customer search(String term) {
+        ArrayList<LoanApplication> loanApplications = new ArrayList<LoanApplication>();
+
         Customer temp = new Customer("First", "Last", 
-                "dummyemail@address.com", "5555555555", "password");
+                "email@email.com", "5555555555", "password", 0.00, loanApplications);
         return temp;
     }
     

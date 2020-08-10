@@ -16,16 +16,16 @@ public class LoanApplication {
     int idCount;
     int SSN;
     double ammountRequested;
-    int userID;
     boolean pending;
     boolean accepted;
+    boolean employmentStatus;
     
-    public LoanApplication(int SSN, double amountRequested, int userId, boolean pending, 
+    public LoanApplication(int SSN, double amountRequested, boolean employmentStatus, boolean pending,
             boolean accepted) {
         this.id = generateID();
         this.SSN = SSN;
         this.ammountRequested = amountRequested;
-        this.userID = userId;
+        this.employmentStatus = employmentStatus;
         this.pending = pending;
         this.accepted = accepted;
     }
@@ -67,14 +67,6 @@ public class LoanApplication {
 
     public void setAmmountRequested(double ammountRequested) {
         this.ammountRequested = ammountRequested;
-    }
-
-    public int getUserID() {
-        return userID;
-    }
-
-    public void setUserID(int userID) {
-        this.userID = userID;
     }
 
     public boolean isPending() {

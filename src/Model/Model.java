@@ -11,38 +11,30 @@ package Model;
  * @author ryan
  */
 public class Model {
-    UserList ul;
-    AccountList al;
-    LoanAppList lal;
-    
+
+    CustomerData cd;
+    EmployeeData ed;
+
     public Model() {
-        
+        cd = new CustomerData();
+        ed = new EmployeeData();
     }
     
     //----------getters and setters----------
 
-    public UserList getUl() {
-        return ul;
+    public CustomerData getCd() {
+        return cd;
     }
 
-    public void setUl(UserList ul) {
-        this.ul = ul;
+    public void setCd(CustomerData cd) {
+        this.cd = cd;
     }
 
-    public AccountList getAl() {
-        return al;
+    public EmployeeData getEd() {
+        return ed;
     }
 
-    public void setAl(AccountList al) {
-        this.al = al;
+    public void setEd(EmployeeData ed) {
+        this.ed = ed;
     }
-
-    public LoanAppList getLal() {
-        return lal;
-    }
-
-    public void setLal(LoanAppList lal) {
-        this.lal = lal;
-    }
-    
 }
