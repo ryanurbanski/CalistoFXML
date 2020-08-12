@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProfileView2Controller">
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProfileViewController">
    <children>
       <BorderPane prefHeight="580.0" prefWidth="320.0">
          <top>
@@ -25,8 +25,8 @@
                   <TextField promptText="email" text="jSmith@email.com" />
                   <Label text="Phone" />
                   <TextField promptText="Telephone" text="814-596-4100" />
-                  <Button mnemonicParsing="false" text="Save Information" />
-                  <Button mnemonicParsing="false" text="Home" />
+                  <Button mnemonicParsing="false" onAction="#handleSaveInfoButtonAction" text="Save Information" />
+                  <Button mnemonicParsing="false" onAction="#handleBackButtonAction" text="Back to Dashboard" />
                </children>
             </VBox>
          </center>

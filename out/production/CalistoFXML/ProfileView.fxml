@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.TextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="580" prefWidth="320" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProfileViewController">
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProfileViewController">
    <children>
-      <Label alignment="CENTER" prefHeight="46.0" prefWidth="325.0" style="-fx-background-color: #CDCDCD;" text="Calisto mFinance" />
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="46.0" prefHeight="53.0" prefWidth="325.0" text="Account Settings" />
-      <TextField floatText="Name" layoutX="42.0" layoutY="99.0" prefHeight="38.0" prefWidth="241.0" text="John Doe" />
-      <TextField floatText="Email" layoutX="42.0" layoutY="164.0" prefHeight="38.0" prefWidth="241.0" text="email@email.com" />
-      <TextField floatText="Phone Number" layoutX="42.0" layoutY="236.0" prefHeight="38.0" prefWidth="241.0" text="555-555-555" />
-      <Button layoutX="104.0" layoutY="334.0" mnemonicParsing="false" text="Save Information" />
-      <Button layoutX="88.0" layoutY="399.0" mnemonicParsing="false" text="Go Back to Dashboard" />
+      <BorderPane prefHeight="580.0" prefWidth="320.0">
+         <top>
+            <Label alignment="CENTER" prefHeight="53.0" prefWidth="320.0" style="-fx-background-color: Gray;" text="Callisto mFinance" textFill="#fcfafa" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="320.0" text="Profile" />
+                  <Label text="First Name" />
+                  <TextField promptText="First Name" text="John" />
+                  <Label text="Last Name" />
+                  <TextField promptText="Last Name" text="Smith" />
+                  <Label text="email" />
+                  <TextField promptText="email" text="jSmith@email.com" />
+                  <Label text="Phone" />
+                  <TextField promptText="Telephone" text="814-596-4100" />
+                  <Button mnemonicParsing="false" onAction="#handleSaveInfoButtonAction" text="Save Information" />
+                  <Button mnemonicParsing="false" onAction="#handleBackButtonAction" text="Back to Dashboard" />
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
    </children>
 </AnchorPane>

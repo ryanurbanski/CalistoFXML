@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardViewController">
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardViewController">
    <children>
       <BorderPane prefHeight="580.0" prefWidth="320.0">
          <top>
@@ -45,7 +45,7 @@
                         <Insets left="8.0" right="8.0" top="8.0" />
                      </VBox.margin>
                      <children>
-                        <Label layoutX="31.0" layoutY="34.0" text="New Loan" />
+                        <Button layoutX="41.0" layoutY="27.0" mnemonicParsing="false" onAction="#handleNewLoanButtonAction" prefHeight="31.0" prefWidth="223.0" text="Create a New Loan Application" />
                      </children>
                   </Pane>
                   <Pane prefHeight="204.0" prefWidth="304.0" style="-fx-background-color: #566D7E;">

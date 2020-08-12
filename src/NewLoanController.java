@@ -1,12 +1,3 @@
-/*
- * Penn State University
- * IST 412
- * Ryan Urbanski
- */
-
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,25 +7,17 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author ryan
- */
-public class DashboardViewController implements Initializable {
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-    /**
-     * Initializes the controller class.
-     */
-
-//    @FXML
-//    private Button profileButton;
+public class NewLoanController implements Initializable {
 
     @FXML
-    private void handleNewLoanButtonAction(ActionEvent event) throws IOException {
-        System.out.println("New Loan Button Clicked");
+    private void handleBackButtonAction(ActionEvent event) throws IOException {
+        System.out.println("Back to Dashboard Button Clicked");
 
-        Parent ProfileViewParent = FXMLLoader.load(getClass().getResource("NewLoan.fxml"));
+        Parent ProfileViewParent = FXMLLoader.load(getClass().getResource("DashboardView.fxml"));
 
         Scene profileScene = new Scene(ProfileViewParent);
 
@@ -47,11 +30,13 @@ public class DashboardViewController implements Initializable {
     }
 
     @FXML
-    private void handleButtonAction(ActionEvent event) throws IOException {
-        System.out.println("Profile Button Clicked");
+    private void handleSubmitButtonAction(ActionEvent event) throws IOException {
+        System.out.println("Submit Loan Button Clicked");
 
+//        Parent ProfileViewParent = FXMLLoader.load(getClass().getResource("ProfileView.fxml"));
+//        Parent ProfileViewParent = FXMLLoader.load(getClass().getResource("LoginView.fxml"));
         Parent ProfileViewParent = FXMLLoader.load(getClass().getResource("ProfileView.fxml"));
-        
+
         Scene profileScene = new Scene(ProfileViewParent);
 
         // get the Stage information
@@ -59,12 +44,13 @@ public class DashboardViewController implements Initializable {
 
         window.setScene(profileScene);
         window.show();
+
 
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
+    }
+
 }
