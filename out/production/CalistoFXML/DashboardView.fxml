@@ -15,7 +15,8 @@
          <top>
             <HBox prefHeight="43.0" prefWidth="320.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label alignment="CENTER" prefHeight="46.0" prefWidth="320.0" style="-fx-background-color: #CDCDCD;" text="Calisto mFinance" />
+                  <Label alignment="CENTER" prefHeight="43.0" prefWidth="270.0" style="-fx-background-color: #CDCDCD;" text="                        Calisto mFinance" />
+                  <Button mnemonicParsing="false" onAction="#handleSignOutButtonAction" prefHeight="43.0" prefWidth="83.0" text="Sign Out" />
                </children>
             </HBox>
          </top>
