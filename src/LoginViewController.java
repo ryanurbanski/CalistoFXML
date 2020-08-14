@@ -30,7 +30,7 @@ public class LoginViewController implements Initializable {
     @FXML
     private void handleCustomerLoginButtonAction(ActionEvent event) throws IOException {
         System.out.println("Login Button Clicked");
-        messageLabel.setText("You will be taken to main menu.");
+
         messageLabel.setTextFill(Color.web("#ff0000", 0.8));
         
         Parent DashboardViewParent = FXMLLoader.load(getClass().getResource("DashboardView.fxml"));
@@ -49,7 +49,7 @@ public class LoginViewController implements Initializable {
     @FXML
     private void handleEmployeeLoginButtonAction(ActionEvent event) throws IOException {
         System.out.println("Login Button Clicked");
-        messageLabel.setText("You will be taken to main menu.");
+
         messageLabel.setTextFill(Color.web("#ff0000", 0.8));
 
         Parent DashboardViewParent = FXMLLoader.load(getClass().getResource("DashboardView.fxml"));
@@ -64,7 +64,26 @@ public class LoginViewController implements Initializable {
         System.out.println("Does it reach here?");
 
     }
-    
+
+    @FXML
+    private void handleCreateAccountButtonAction(ActionEvent event) throws IOException {
+        System.out.println("Create Account Button Clicked");
+
+        messageLabel.setTextFill(Color.web("#ff0000", 0.8));
+
+        Parent DashboardViewParent = FXMLLoader.load(getClass().getResource("RegistrationView.fxml"));
+        Scene dashboardScene = new Scene(DashboardViewParent);
+
+        // get the Stage information
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        window.setScene(dashboardScene);
+        window.show();
+
+        System.out.println("Does it reach here?");
+
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
