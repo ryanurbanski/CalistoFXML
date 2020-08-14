@@ -61,6 +61,22 @@ public class DashboardViewController implements Initializable {
         window.show();
 
     }
+    
+    @FXML
+    private void handleSignOutButtonAction(ActionEvent event) throws IOException {
+        System.out.println("Sign Out Button Clicked");
+
+        Parent LoginViewParent = FXMLLoader.load(getClass().getResource("LoginView.fxml"));
+        
+        Scene loginScene = new Scene(LoginViewParent);
+
+        // get the Stage information
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        window.setScene(loginScene);
+        window.show();
+
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {

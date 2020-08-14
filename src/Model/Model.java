@@ -14,10 +14,12 @@ public class Model {
 
     CustomerData cd;
     EmployeeData ed;
+    LoanApplicationData ld;
 
     public Model() {
         cd = new CustomerData();
         ed = new EmployeeData();
+        ld = new LoanApplicationData();
     }
     
     //----------getters and setters----------
@@ -36,5 +38,12 @@ public class Model {
 
     public void setEd(EmployeeData ed) {
         this.ed = ed;
+    }
+    public LoanApplicationData getLd() {
+        return ld;
+    }
+
+    public void setLd(LoanApplicationData ld) {
+        this.ld = ld;
     }
 }

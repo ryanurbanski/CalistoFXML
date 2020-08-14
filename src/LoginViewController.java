@@ -52,7 +52,7 @@ public class LoginViewController implements Initializable {
 
         messageLabel.setTextFill(Color.web("#ff0000", 0.8));
 
-        Parent DashboardViewParent = FXMLLoader.load(getClass().getResource("DashboardView.fxml"));
+        Parent DashboardViewParent = FXMLLoader.load(getClass().getResource("ApplicationList.fxml"));
         Scene dashboardScene = new Scene(DashboardViewParent);
 
         // get the Stage information
