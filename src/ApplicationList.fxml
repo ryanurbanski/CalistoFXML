@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ApplicationListController">
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ApplicationListController">
    <children>
       <BorderPane prefHeight="563.0" prefWidth="320.0">
          <center>
@@ -16,11 +16,11 @@
                <children>
                   <HBox prefHeight="48.0" prefWidth="320.0">
                      <children>
-                        <Label alignment="CENTER" prefHeight="48.0" prefWidth="258.0" text="                       Pending Applications" />
-                        <Button mnemonicParsing="false" onAction="#handleSignOutButtonAction" prefHeight="48.0" prefWidth="76.0" text="Sign Out" />
+                        <Button mnemonicParsing="false" onAction="#handleBackButtonAction" prefHeight="48.0" prefWidth="77.0" text="Back" />
+                        <Label alignment="CENTER" prefHeight="48.0" prefWidth="170.0" text="Pending Applications" />
                      </children>
                   </HBox>
-                  <ListView fx:id="listView" prefHeight="363.0" prefWidth="320.0" />
+                  <ListView fx:id="listView" prefHeight="294.0" prefWidth="320.0" />
                   <Button mnemonicParsing="false" onAction="#handleViewApplicationButtonAction" prefHeight="27.0" prefWidth="326.0" text="View Application" />
                </children>
             </VBox>

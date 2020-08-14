@@ -53,13 +53,13 @@ public class ApplicationListController implements Initializable {
         listView.setItems(data);
         // TODO
         
-    }    
-    
+    }
+
     @FXML
-    private void handleSignOutButtonAction(ActionEvent event) throws IOException {
+    private void handleBackButtonAction(ActionEvent event) throws IOException {
         System.out.println("Sign Out Button Clicked");
 
-        Parent LoginViewParent = FXMLLoader.load(getClass().getResource("LoginView.fxml"));
+        Parent LoginViewParent = FXMLLoader.load(getClass().getResource("EmployeeDashboard.fxml"));
         
         Scene loginScene = new Scene(LoginViewParent);
 

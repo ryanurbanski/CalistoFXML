@@ -31,6 +31,54 @@ public class DashboardViewController implements Initializable {
 //    private Button profileButton;
 
     @FXML
+    private void handleSignOutButtonAction(ActionEvent event) throws IOException {
+        System.out.println("Sign Out Button Clicked");
+
+        Parent LoginViewParent = FXMLLoader.load(getClass().getResource("LoginView.fxml"));
+
+        Scene loginScene = new Scene(LoginViewParent);
+
+        // get the Stage information
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+        window.setScene(loginScene);
+        window.show();
+
+    }
+
+    @FXML
+    private void handleDepositButtonAction(ActionEvent event) throws IOException {
+        System.out.println("Deposit Button Clicked");
+
+//        Parent LoginViewParent = FXMLLoader.load(getClass().getResource("LoginView.fxml"));
+//
+//        Scene loginScene = new Scene(LoginViewParent);
+//
+//        // get the Stage information
+//        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+//
+//        window.setScene(loginScene);
+//        window.show();
+
+    }
+
+    @FXML
+    private void handleWithdrawButtonAction(ActionEvent event) throws IOException {
+        System.out.println("Withdraw Button Clicked");
+
+//        Parent LoginViewParent = FXMLLoader.load(getClass().getResource("LoginView.fxml"));
+//
+//        Scene loginScene = new Scene(LoginViewParent);
+//
+//        // get the Stage information
+//        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+//
+//        window.setScene(loginScene);
+//        window.show();
+
+    }
+
+    @FXML
     private void handleNewLoanButtonAction(ActionEvent event) throws IOException {
         System.out.println("New Loan Button Clicked");
 
@@ -47,7 +95,23 @@ public class DashboardViewController implements Initializable {
     }
 
     @FXML
-    private void handleButtonAction(ActionEvent event) throws IOException {
+    private void handleAcceptLoanButtonAction(ActionEvent event) throws IOException {
+        System.out.println("Accept Loan Button Clicked");
+
+//        Parent LoginViewParent = FXMLLoader.load(getClass().getResource("LoginView.fxml"));
+//
+//        Scene loginScene = new Scene(LoginViewParent);
+//
+//        // get the Stage information
+//        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+//
+//        window.setScene(loginScene);
+//        window.show();
+
+    }
+
+    @FXML
+    private void handleProfileButtonAction(ActionEvent event) throws IOException {
         System.out.println("Profile Button Clicked");
 
         Parent ProfileViewParent = FXMLLoader.load(getClass().getResource("ProfileView.fxml"));
@@ -58,22 +122,6 @@ public class DashboardViewController implements Initializable {
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 
         window.setScene(profileScene);
-        window.show();
-
-    }
-    
-    @FXML
-    private void handleSignOutButtonAction(ActionEvent event) throws IOException {
-        System.out.println("Sign Out Button Clicked");
-
-        Parent LoginViewParent = FXMLLoader.load(getClass().getResource("LoginView.fxml"));
-        
-        Scene loginScene = new Scene(LoginViewParent);
-
-        // get the Stage information
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-
-        window.setScene(loginScene);
         window.show();
 
     }

@@ -42,8 +42,6 @@ public class LoginViewController implements Initializable {
         window.setScene(dashboardScene);
         window.show();
         
-        System.out.println("Does it reach here?");
-        
     }
 
     @FXML
@@ -52,7 +50,7 @@ public class LoginViewController implements Initializable {
 
         messageLabel.setTextFill(Color.web("#ff0000", 0.8));
 
-        Parent DashboardViewParent = FXMLLoader.load(getClass().getResource("ApplicationList.fxml"));
+        Parent DashboardViewParent = FXMLLoader.load(getClass().getResource("EmployeeDashboard.fxml"));
         Scene dashboardScene = new Scene(DashboardViewParent);
 
         // get the Stage information
@@ -60,8 +58,6 @@ public class LoginViewController implements Initializable {
 
         window.setScene(dashboardScene);
         window.show();
-
-        System.out.println("Does it reach here?");
 
     }
 
@@ -79,8 +75,6 @@ public class LoginViewController implements Initializable {
 
         window.setScene(dashboardScene);
         window.show();
-
-        System.out.println("Does it reach here?");
 
     }
 
